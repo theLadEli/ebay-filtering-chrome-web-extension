@@ -5,6 +5,8 @@
     "description": "An extension that allows the user to filter ebay listings based on certain description word/phrase inclusions or exclusions.",
     "permissions": [
       "activeTab",
+      "https://*.ebay.co.uk/*",
+      "https://www.ebay.co.uk/*",
       "https://www.ebay.co.uk/*",
       "https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=iphone&_sacat=0"
     ],
@@ -13,7 +15,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://www.ebay.co.uk/*","https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=iphone&_sacat=0"],
+        "matches": ["https://*.ebay.co.uk/*", "https://www.ebay.co.uk/*","https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=iphone&_sacat=0"],
         "js": ["content.js"]
       }
     ],
